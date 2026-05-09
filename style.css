@@ -104,8 +104,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
   color:var(--gold);margin-bottom:1.8rem;display:flex;align-items:center;gap:1rem}
 .overline::before{content:'';width:2rem;height:1px;background:var(--gold);flex-shrink:0}
 h1{font-family:'Gilroy',sans-serif;font-size:clamp(2.6rem,5.2vw,5.4rem);
-  font-weight:600;line-height:1.06;letter-spacing:-.02em;margin-bottom:2rem}
-h1 em{font-style:normal;font-weight:700;color:var(--gold)}
+  font-weight:500;line-height:1.06;letter-spacing:-.015em;margin-bottom:2rem}
+h1 em{font-style:normal;font-weight:600;color:var(--gold)}
 .hero-desc{font-size:clamp(.82rem,1.4vw,.92rem);line-height:1.85;
   color:rgba(237,232,223,.72);max-width:420px;margin-bottom:2.5rem}
 .actions{display:flex;gap:.8rem;flex-wrap:wrap}
@@ -146,7 +146,7 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
   margin-bottom:1rem;display:flex;align-items:center;gap:1rem}
 .ey::before{content:'';width:1.8rem;height:1px;background:var(--gold);flex-shrink:0}
 .st{font-family:'Gilroy',sans-serif;font-size:clamp(1.8rem,3.5vw,3rem);
-  font-weight:600;line-height:1.1;letter-spacing:-.02em}
+  font-weight:500;line-height:1.1;letter-spacing:-.015em}
 .st em{font-style:italic;color:var(--gold)}
 .ss{margin-top:1rem;font-size:clamp(.82rem,1.5vw,.9rem);color:var(--muted);line-height:1.8;max-width:520px}
 .gl{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
