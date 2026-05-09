@@ -5,7 +5,7 @@ html{scroll-behavior:smooth}
   --gold:#BF9560;--gold2:#D4AE7A;--gold-dim:rgba(191,149,96,0.12);
   --white:#EDE8DF;--muted:rgba(237,232,223,0.50);
   --border:rgba(191,149,96,.22);--border2:rgba(255,255,255,.07);
-  --nav-h:68px;--px:clamp(1.2rem,5vw,3rem)
+  --nav-h:68px;--px:max(clamp(1.2rem,5vw,3rem),calc((100vw - 1600px) / 2))
 }
 /* Light section override — applied to individual sections */
 .ls{
