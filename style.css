@@ -25,7 +25,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
   display:flex;align-items:center;justify-content:space-between;
   padding:0 var(--px);border-bottom:1px solid var(--border2);
   backdrop-filter:blur(18px);background:rgba(13,13,11,.84)}
-.logo{font-family:'Lora',serif;font-size:1.45rem;font-weight:400;
+.logo{font-family:'Manrope',sans-serif;font-size:1.35rem;font-weight:700;
   letter-spacing:.3em;color:var(--white);text-decoration:none;text-transform:uppercase;flex-shrink:0}
 .logo em{color:var(--gold);font-style:normal}
 .nav-links{display:flex;gap:1.3rem;list-style:none;margin:0 1rem}
@@ -50,7 +50,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
   background:rgba(13,13,11,.97);flex-direction:column;
   align-items:center;justify-content:center;gap:2.2rem;padding-top:var(--nav-h)}
 .mob-menu.open{display:flex}
-.mob-menu a{font-family:'Lora',serif;font-size:1.9rem;font-weight:400;
+.mob-menu a{font-family:'Manrope',sans-serif;font-size:1.9rem;font-weight:600;
   letter-spacing:.08em;color:var(--white);text-decoration:none;transition:color .2s}
 .mob-menu a:hover{color:var(--gold)}
 .mob-menu .m-cta{font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;letter-spacing:.08em;
@@ -98,9 +98,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 .overline{font-size:.63rem;letter-spacing:.25em;text-transform:uppercase;
   color:var(--gold);margin-bottom:1.8rem;display:flex;align-items:center;gap:1rem}
 .overline::before{content:'';width:2rem;height:1px;background:var(--gold);flex-shrink:0}
-h1{font-family:'Lora',serif;font-size:clamp(3.2rem,6.5vw,6.5rem);
-  font-weight:400;line-height:1.02;letter-spacing:-.035em;margin-bottom:2rem}
-h1 em{font-style:italic;color:var(--gold)}
+h1{font-family:'Manrope',sans-serif;font-size:clamp(2.8rem,6vw,6rem);
+  font-weight:600;line-height:1.04;letter-spacing:-.025em;margin-bottom:2rem}
+h1 em{font-style:normal;font-weight:700;color:var(--gold)}
 .hero-desc{font-size:clamp(.82rem,1.4vw,.92rem);line-height:1.85;
   color:rgba(237,232,223,.72);max-width:420px;margin-bottom:2.5rem}
 .actions{display:flex;gap:.8rem;flex-wrap:wrap}
@@ -120,8 +120,8 @@ h1 em{font-style:italic;color:var(--gold)}
   text-align:right;z-index:3;
   animation:hero-in 1.1s .25s cubic-bezier(.22,1,.36,1) both
 }
-.counter-n{font-family:'Lora',serif;font-size:clamp(2.4rem,5vw,4.2rem);
-  font-weight:400;line-height:1;color:var(--gold);opacity:.6}
+.counter-n{font-family:'Manrope',sans-serif;font-size:clamp(2.4rem,5vw,4.2rem);
+  font-weight:800;line-height:1;color:var(--gold);opacity:.65}
 .counter-l{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;
   color:rgba(237,232,223,.45);margin-top:.3rem}
 
@@ -130,8 +130,8 @@ h1 em{font-style:italic;color:var(--gold)}
   border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);position:relative;z-index:2}
 .stat{padding:clamp(1.4rem,3vw,2.5rem) clamp(.9rem,2.5vw,2rem);border-right:1px solid var(--border2)}
 .stat:last-child{border-right:none}
-.stat-n{font-family:'Lora',serif;font-size:clamp(1.7rem,3vw,2.4rem);
-  font-weight:400;color:var(--gold);line-height:1;margin-bottom:.4rem}
+.stat-n{font-family:'Manrope',sans-serif;font-size:clamp(1.7rem,3vw,2.4rem);
+  font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem}
 .stat-l{font-size:.66rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
 
 /* SECTIONS */
@@ -140,8 +140,8 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
 .ey{font-size:.63rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);
   margin-bottom:1rem;display:flex;align-items:center;gap:1rem}
 .ey::before{content:'';width:1.8rem;height:1px;background:var(--gold);flex-shrink:0}
-.st{font-family:'Lora',serif;font-size:clamp(1.8rem,3.5vw,3rem);
-  font-weight:400;line-height:1.1}
+.st{font-family:'Manrope',sans-serif;font-size:clamp(1.8rem,3.5vw,3rem);
+  font-weight:600;line-height:1.1;letter-spacing:-.02em}
 .st em{font-style:italic;color:var(--gold)}
 .ss{margin-top:1rem;font-size:clamp(.82rem,1.5vw,.9rem);color:var(--muted);line-height:1.8;max-width:520px}
 .gl{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
@@ -164,9 +164,9 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
 .pj.big .pj-b{position:absolute;bottom:0;left:0;right:0;
   background:linear-gradient(transparent,rgba(13,13,11,.95));padding:3rem 1.6rem 1.6rem}
 .pj-c{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
-.pj-n{font-family:'Lora',serif;font-size:clamp(1rem,1.8vw,1.2rem);font-weight:400;margin-bottom:.4rem}
+.pj-n{font-family:'Manrope',sans-serif;font-size:clamp(1rem,1.8vw,1.2rem);font-weight:400;margin-bottom:.4rem}
 .pj-m{font-size:.74rem;color:var(--muted);margin-bottom:.7rem}
-.pj-p{font-family:'Lora',serif;font-size:clamp(1.1rem,2vw,1.4rem);font-weight:300;color:var(--gold)}
+.pj-p{font-family:'Manrope',sans-serif;font-size:clamp(1.1rem,2vw,1.4rem);font-weight:300;color:var(--gold)}
 
 /* RAILINGS */
 #railings{background:var(--bg2)}
@@ -180,10 +180,10 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
 .td{width:5px;height:5px;border-radius:50%;flex-shrink:0}
 .te{background:#7AAD5A} .tm{background:var(--gold)} .tp{background:var(--white)}
 .ce{color:#7AAD5A} .cm{color:var(--gold)} .cp{color:var(--white)}
-.rn{font-family:'Lora',serif;font-size:clamp(1rem,1.5vw,1.15rem);
+.rn{font-family:'Manrope',sans-serif;font-size:clamp(1rem,1.5vw,1.15rem);
   font-weight:400;margin-bottom:.35rem;line-height:1.2}
 .rd{font-size:.74rem;color:var(--muted);line-height:1.6;margin-bottom:.9rem}
-.rp{font-family:'Lora',serif;font-size:1rem;color:var(--gold)}
+.rp{font-family:'Manrope',sans-serif;font-size:1rem;color:var(--gold)}
 .rph{margin-top:.9rem;aspect-ratio:16/9;overflow:hidden;background:var(--bg3);
   display:flex;align-items:center;justify-content:center}
 .rph img{width:100%;height:100%;object-fit:cover;filter:brightness(.65);transition:filter .3s}
@@ -198,14 +198,14 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
 .sc{padding:1.6rem 1.2rem;border-right:1px solid var(--border2);display:flex;align-items:center}
 .si{padding:1.6rem 2rem;border-right:1px solid var(--border2)}
 .st2{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.4rem}
-.sn{font-family:'Lora',serif;font-size:clamp(1.05rem,1.8vw,1.25rem);
+.sn{font-family:'Manrope',sans-serif;font-size:clamp(1.05rem,1.8vw,1.25rem);
   font-weight:400;margin-bottom:.5rem}
 .sd{font-size:clamp(.76rem,1.3vw,.82rem);color:var(--muted);line-height:1.7}
 .stags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.7rem}
 .tag{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;
   padding:.18rem .55rem;border:1px solid var(--border2);color:var(--muted)}
 .sp{padding:1.6rem 1.2rem;display:flex;flex-direction:column;justify-content:center;align-items:flex-end}
-.spr{font-family:'Lora',serif;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--gold)}
+.spr{font-family:'Manrope',sans-serif;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--gold)}
 .spn{font-size:.63rem;color:var(--muted);margin-top:.3rem;letter-spacing:.05em}
 
 /* WOOD */
@@ -215,7 +215,7 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
 .wc:hover{background:var(--bg3)}
 .ws{height:78px}
 .wb{padding:.8rem .9rem 1rem}
-.wn{font-family:'Lora',serif;font-size:.92rem;margin-bottom:.22rem}
+.wn{font-family:'Manrope',sans-serif;font-size:.92rem;margin-bottom:.22rem}
 .wd{font-size:.68rem;color:var(--muted);line-height:1.5;margin-bottom:.38rem}
 .wp{font-size:.7rem;color:var(--gold)}
 
@@ -223,7 +223,7 @@ section{position:relative;z-index:2;padding:clamp(3.5rem,8vw,7rem) var(--px)}
 #how{background:var(--bg)}
 .hg{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border2);margin-top:3.5rem}
 .hs{background:var(--bg);padding:1.8rem 1.5rem}
-.hn{font-family:'Lora',serif;font-size:3.2rem;font-weight:400;
+.hn{font-family:'Manrope',sans-serif;font-size:3.2rem;font-weight:800;
   color:var(--gold);opacity:.12;line-height:1;margin-bottom:.9rem}
 .ht{font-size:.86rem;letter-spacing:.04em;margin-bottom:.5rem}
 .hd{font-size:.76rem;color:var(--muted);line-height:1.7}
@@ -271,7 +271,7 @@ option{background:var(--bg2)}
 footer{padding:1.8rem var(--px);border-top:1px solid var(--border2);
   display:flex;align-items:center;justify-content:space-between;
   background:var(--bg);flex-wrap:wrap;gap:.8rem;position:relative;z-index:2}
-.fl{font-family:'Lora',serif;font-size:1.1rem;font-weight:400;
+.fl{font-family:'Manrope',sans-serif;font-size:1.1rem;font-weight:700;
   letter-spacing:.3em;color:var(--white);text-decoration:none;text-transform:uppercase}
 .fl em{color:var(--gold);font-style:normal}
 footer p{font-size:.68rem;color:var(--muted);letter-spacing:.08em}
@@ -351,10 +351,10 @@ footer p{font-size:.68rem;color:var(--muted);letter-spacing:.08em}
 .oc{background:var(--bg);padding:1.6rem 1.4rem;cursor:pointer;
   transition:background .25s;border-bottom:2px solid transparent}
 .oc:hover{background:var(--bg3);border-bottom-color:var(--gold)}
-.on{font-family:'Lora',serif;font-size:clamp(1rem,1.5vw,1.15rem);
+.on{font-family:'Manrope',sans-serif;font-size:clamp(1rem,1.5vw,1.15rem);
   font-weight:400;margin-bottom:.4rem;line-height:1.2}
 .od{font-size:.74rem;color:var(--muted);line-height:1.6;margin-bottom:.7rem}
-.op{font-family:'Lora',serif;font-size:1rem;color:var(--gold)}
+.op{font-family:'Manrope',sans-serif;font-size:1rem;color:var(--gold)}
 
 /* ——— SMALL ≤420 ——— */
 @media(max-width:420px){
@@ -398,7 +398,7 @@ section.view-ct .btn-g{display:inline-flex}
   transition:background .25s,border-bottom-color .25s;border-bottom:2px solid transparent}
 .cat-card:hover{background:var(--bg3);border-bottom-color:var(--gold)}
 .cat-icon{margin-bottom:1.4rem;opacity:.9}
-.cat-label{font-family:'Lora',serif;font-size:clamp(1.15rem,2vw,1.5rem);
+.cat-label{font-family:'Manrope',sans-serif;font-size:clamp(1.15rem,2vw,1.5rem);
   font-weight:300;margin-bottom:.5rem;line-height:1.15}
 .cat-desc{font-size:.74rem;color:var(--muted);line-height:1.65;margin-bottom:1rem}
 .cat-link{font-size:.72rem;letter-spacing:.04em;color:var(--gold);
