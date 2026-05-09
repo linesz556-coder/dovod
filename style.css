@@ -59,7 +59,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 
 /* HERO */
 .hero{min-height:100vh;padding-top:var(--nav-h);
-  display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+  display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;
+  --px:clamp(1.5rem,4vw,5rem)}
 .hero-left{display:flex;flex-direction:column;justify-content:flex-end;
   padding:5rem var(--px) 5rem;border-right:1px solid var(--border2);position:relative;z-index:2}
 .hero-right{position:relative;overflow:hidden;min-height:300px}
