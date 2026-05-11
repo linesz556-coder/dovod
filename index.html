@@ -54,12 +54,27 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg">
-    <img src="hero.jpg" alt="Навес с поликарбонатом и декоративные перила — Довод" loading="eager">
+  <div class="hero-slides">
+    <div class="hero-slide active" data-label="Навесы и террасы">
+      <img src="hero.jpg" alt="Навес с поликарбонатом и декоративные перила — Довод" loading="eager">
+    </div>
+    <div class="hero-slide" data-label="Заборы">
+      <img src="hero-fence.jpg" alt="Металлический забор — Довод" loading="lazy">
+    </div>
+    <div class="hero-slide" data-label="Навесы для авто">
+      <img src="hero-carport.jpg" alt="Навес для автомобиля — Довод" loading="lazy">
+    </div>
+    <div class="hero-slide" data-label="Откатные ворота">
+      <img src="hero-gates.jpg" alt="Откатные ворота — Довод" loading="lazy">
+    </div>
+    <div class="hero-slide" data-label="Лестницы и перила">
+      <img src="hero-stairs.jpg" alt="Лестница с перилами — Довод" loading="lazy">
+    </div>
   </div>
   <div class="hero-overlay"></div>
+  <div class="hero-dots" id="heroDots"></div>
   <div class="hero-left">
-    <div class="overline">Металлоконструкции под заказ</div>
+    <div class="overline" id="heroLabel">Металлоконструкции под заказ</div>
     <h1>Конструкции<br>из&nbsp;металла,<br><em>которые остаются</em></h1>
     <p class="hero-desc">Лестницы, перила, заборы, навесы и любые металлоконструкции под заказ. Приедем на замер, покажем варианты — без воды и переплат.</p>
     <div class="actions">
@@ -1204,5 +1219,39 @@
 </a>
 
 <script src="script.js"></script>
+<script>
+(function(){
+  const slides = document.querySelectorAll('.hero-slide');
+  const dotsWrap = document.getElementById('heroDots');
+  const label = document.getElementById('heroLabel');
+  if(!slides.length) return;
+
+  // build dots
+  slides.forEach((s,i)=>{
+    const d = document.createElement('button');
+    d.className = 'hero-dot' + (i===0?' active':'');
+    d.setAttribute('aria-label','Слайд '+(i+1));
+    d.addEventListener('click',()=>goTo(i));
+    dotsWrap.appendChild(d);
+  });
+
+  let cur = 0, timer;
+  const dots = dotsWrap.querySelectorAll('.hero-dot');
+
+  function goTo(n){
+    slides[cur].classList.remove('active');
+    dots[cur].classList.remove('active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    dots[cur].classList.add('active');
+    if(label) label.textContent = slides[cur].dataset.label || 'Металлоконструкции под заказ';
+    clearInterval(timer);
+    timer = setInterval(next, 3000);
+  }
+
+  function next(){ goTo(cur+1); }
+  timer = setInterval(next, 3000);
+})();
+</script>
 </body>
 </html>
